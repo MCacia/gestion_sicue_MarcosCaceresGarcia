@@ -125,6 +125,7 @@ def redirigir_menu(tipo_usuario):
         # Menú para Profesores
         tk.Button(menu_window, text="Seleccionar Grado y Asignaturas", command=lambda: ejecutar_app("inscripciones_profesores2.py")).pack(pady=10)
         tk.Button(menu_window, text="Consultar Planes", command=lambda: ejecutar_app("consulta_planes.py")).pack(pady=10)
+        tk.Button(menu_window, text="Anular Inscripcion", command=lambda: ejecutar_app("anular_inscripciones_profes.py")).pack(pady=10)
     else:
         # Menú para Alumnos
         tk.Button(menu_window, text="Inscribirse en Plan de Convalidación", command=lambda: ejecutar_app("inscripcion.py")).pack(pady=10)
