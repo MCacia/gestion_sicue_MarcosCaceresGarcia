@@ -114,6 +114,7 @@ def redirigir_menu(tipo_usuario):
     if tipo_usuario == "Administrador":
         # Menú de Administrador con opciones adicionales
         tk.Button(menu_window, text="Crear Planes de Convalidación", command=lambda: ejecutar_app("crear_plan.py")).pack(pady=10)
+        tk.Button(menu_window, text="Modificar PLan de Convalidacion", command=lambda: ejecutar_app("modificar_plan.py")).pack(pady=10)
         tk.Button(menu_window, text="Consultar Inscripciones", command=lambda: ejecutar_app("consulta_inscripciones.py")).pack(pady=10)
         tk.Button(menu_window, text="Anular Inscripciones", command=lambda: ejecutar_app("anular_inscripciones.py")).pack(pady=10)
         tk.Button(menu_window, text="Consultar Planes", command=lambda: ejecutar_app("consulta_planes.py")).pack(pady=10)
