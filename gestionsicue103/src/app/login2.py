@@ -96,14 +96,15 @@ def limpiar_campos():
 
 def cambiar_tipo():
     """Cambia las etiquetas de los campos según el tipo seleccionado."""
-    if var_tipo.get() == 1:
+    if var_tipo.get() == 1:  # Profesor
         label_extra.config(text="Correo:")
         label_extra2.config(text="Grado:")
-        entry_extra2.grid(row=5, column=1, padx=5, pady=5)
-    else:
+        label_extra2.grid(row=5, column=0, padx=5, pady=5)  # Mostrar etiqueta de grado
+        entry_extra2.grid(row=5, column=1, padx=5, pady=5)  # Mostrar campo de grado
+    else:  # Alumno
         label_extra.config(text="Curso:")
-        label_extra2.grid_remove()
-        entry_extra2.grid_remove()
+        label_extra2.grid_remove()  # Ocultar etiqueta de grado
+        entry_extra2.grid_remove()  # Ocultar campo de grado
 
 # Función para redirigir al menú de acuerdo al tipo de usuario
 def redirigir_menu(tipo_usuario):
